@@ -1,28 +1,205 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
 
     <title>Hello, world!</title>
 </head>
 
 <body>
     <div class="container">
-
         <h1 class="display-1">Tytuł strony</h1>
         <small class="text-muted">Slogan firmy</small>
 
         <p class="lead">Zwykły text</p>
 
-        <img src="/bootstrap-test/assets/greece-4405371_1920.jpg" class="img-fluid rounded img-thumbnail" alt="">
+        <img src="/bootstrap-test/assets/greece-4405371_1920.jpg" class="img-fluid rounded img-thumbnail" alt="" />
 
+        <!-- Alert -->
+        <p>Alert</p>
+        <div class="alert alert-primary">
+            Komunikat! <a href="#">Sprawdź dlaczego</a>
+        </div>
+        <div class="alert alert-secondary">
+            Komunikat! <a href="#" class="alert-link">Sprawdź dlaczego</a>
+        </div>
+        <div class="alert alert-danger">
+            Błąd! <a href="#" class="alert-link">Sprawdź dlaczego</a>
+        </div>
+        <div class="alert alert-success">Sukces</div>
+        <div class="alert alert-warning">
+            Ojojoj! <a href="#" class="alert-link">Sprawdź dlaczego</a>
+        </div>
+
+        <!-- Alert, który mozna wyłaczyć -->
+        <p>Alert, który mozna wyłaczyć</p>
+        <div class="alert alert-warning alert-dismissible fade show" role="alert">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
+            assumenda eius tempora at ullam aspernatur distinctio obcaecati,
+            repellat, maxime, tenetur deleniti facere tempore sapiente ratione
+            dolorem quis facilis similique eveniet.
+            <button type="button" class="close" data-dismiss="alert">
+                <span aria-hidden="true">&times;</span>
+            </button>
+        </div>
+
+        <!-- Badge -->
+        <p>Badge</p>
+        <h1>Badge <span class="badge badge-primary">primary</span></h1>
+        <h1>Badge <span class="badge badge-secondary">secondary</span></h1>
+        <h1>Badge <span class="badge badge-success">success</span></h1>
+        <h1>Badge <span class="badge badge-danger">danger</span></h1>
+        <h1>Badge <span class="badge badge-warning">warning</span></h1>
+        <h1>Badge <span class="badge badge-info">info</span></h1>
+        <h1>Badge <span class="badge badge-light">light</span></h1>
+        <h1>Badge <span class="badge badge-dark">dark</span></h1>
+
+        <!-- button -->
+        <p>Buttons</p>
+        <button class="btn btn-primary">primary</button>
+        <button class="btn btn-seccondary">seccondary</button>
+        <button class="btn btn-success">success</button>
+        <button class="btn btn-danger">danger</button>
+        <button class="btn btn-warning">warning</button>
+        <button class="btn btn-info">info</button>
+        <button class="btn btn-dark">dark</button>
+        <button class="btn btn-light">light</button>
+        <button class="btn btn-link">link</button>
+
+        <p>Z ramką, dla mniej znaczących elementów</p>
+        <button class="btn btn-outline-primary">primary</button>
+        <button class="btn btn-outline-seccondary">seccondary</button>
+        <button class="btn btn-outline-success">success</button>
+        <button class="btn btn-outline-danger">danger</button>
+        <button class="btn btn-outline-warning">warning</button>
+        <button class="btn btn-outline-info">info</button>
+        <button class="btn btn-outline-dark">dark</button>
+        <button class="btn btn-outline-light">light</button>
+        <button class="btn btn-outline-link">link</button>
+        </br>
+        </br>
+
+        <button class="btn btn-primary">Akceptuj</button>
+        <button class="btn btn-outline-primary">Wróć</button>
+        </br>
+        </br>
+        <button class="btn btn-primary">Akceptuj</button>
+        <button class="btn btn-outline-secondary">Wróć</button>
+        </br>
+        </br>
+
+        <!-- Rozmiar buttona -->
+        <button class="btn btn-primary btn-lg">Akceptuj</button>
+        <button class="btn btn-outline-secondary">Wróć</button>
+        </br>
+        </br>
+        <button class="btn btn-primary btn-sm">Akceptuj</button>
+        <button class="btn btn-outline-secondary">Wróć</button>
+
+        </br>
+        </br>
+        <button class="btn btn-outline-primary" disabled>Kup coś</button>
+        <button class="btn btn-outline-secondary" disabled>Kup coś</button>
+
+        </br>
+        </br>
+
+        <!-- Grupa przysków -->
+
+        <p>Grupa przycisków</p>
+        <div class="btn-group">
+            <button class="btn btn-primary btn-sm">Akceptuj</button>
+            <button class="btn btn-outline-secondary">Wróć</button>
+            <button class="btn btn-info">info</button>
+        </div>
+
+        </br>
+        </br>
+
+
+
+        <!-- Card -->
+        <!-- https://getbootstrap.com/docs/4.3/components/card/ -->
+        <div class="card" style="width: 18rem;">
+            <img src="/assets/greece-4405371_1920.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
+                    card's content.</p>
+                <a href="#" class="btn btn-primary">Zatwierdź</a>
+            </div>
+        </div>
+        </br>
+        </br>
+
+        <!-- Szablon poziomy -->
+        <div class="card mb-3" style="max-width: 540px;">
+            <div class="row no-gutters">
+                <div class="col-md-4">
+                    <img src="/assets/greece-4405371_1920.jpg" class="card-img" alt="...">
+                </div>
+                <div class="col-md-8">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+                            additional content. This content is a little bit longer.</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Układanie kart -->
+        <div class="row">
+            <div class="col-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/assets/greece-4405371_1920.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Zatwierdź</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/assets/greece-4405371_1920.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Zatwierdź</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4">
+                <div class="card" style="width: 100%;">
+                    <img src="/assets/greece-4405371_1920.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of
+                            the
+                            card's content.</p>
+                        <a href="#" class="btn btn-primary">Zatwierdź</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+        <!-- Tabele -->
         <table class="table ">
             <thead class="thead-dark">
                 <tr>
@@ -90,9 +267,8 @@
             </tbody>
         </table>
 
-
-        <!-- Tabela rezponsywna -->
-        <h2 class="lead">Tabela rezponsywna</h2>
+        <!-- Tabela responsywna -->
+        <h2 class="lead">Tabela responsywna</h2>
         <table class="table table-striped table-hover table-sm table-responsive">
             <thead>
                 <tr>
@@ -185,8 +361,6 @@
                 </tr>
             </tbody>
         </table>
-
-
     </div>
 
     <!-- Optional JavaScript -->
